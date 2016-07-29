@@ -12,10 +12,10 @@ public class InventoryItem {
     public InventoryItem(String s, String s1, String s2, int i, int bad_boy_prince) {
     }
 
-    public InventoryItem(String name, String description, String category, int imageResId) {
+    public InventoryItem(String name, String description, String category, String website) {
         mName = name;
         mDescription = description;
-        mImageResId = imageResId;
+        mWebsite = website;
     }
 
     public InventoryItem(String mName, String mDescription, String mWebsite) {
@@ -30,14 +30,6 @@ public class InventoryItem {
 
     public void setDescription(String description) {
         this.mDescription = description;
-    }
-
-    public int getImageResId() {
-        return mImageResId;
-    }
-
-    public void setImageResId(int imageResId) {
-        this.mImageResId = imageResId;
     }
 
     public String getName() {

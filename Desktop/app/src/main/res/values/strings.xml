@@ -10,5 +10,6 @@
     <string name="action_new">Settings</string>
     <string name="logo_desc">App logo</string>
     <string name="country_name">Nigeria</string>
+    <string name="search_hint" />
 
 </resources>

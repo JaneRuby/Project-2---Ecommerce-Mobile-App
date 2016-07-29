@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.janerubygrissom.project2.StoreHome"
+    tools:context=".StoreHome"
     tools:showIn="@layout/app_bar_store_home"
     android:background="#9C27B0"
     android:layout_centerInParent="true">
@@ -118,7 +118,13 @@
             <!--android:layout_marginTop="4dp"-->
             <!--android:background="@color/colorPrimaryDark" />-->
 
-
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_dialog_email" />
     </LinearLayout>
 
 </ScrollView>

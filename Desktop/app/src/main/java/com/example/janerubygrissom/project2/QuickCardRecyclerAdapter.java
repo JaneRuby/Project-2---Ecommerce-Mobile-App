@@ -37,7 +37,7 @@ public class QuickCardRecyclerAdapter extends RecyclerView.Adapter<QuickCardView
         //need to input website
 
         Picasso.with(holder.getItemImage().getContext()).load(mInventoryList.get(position).getmWebsite()
-        ).into(holder.getItemImage());
+        ).resize(600,200).into(holder.getItemImage());
 
 //        holder.getItemImage().setImageResource(item.getImageResId());
 

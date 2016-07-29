@@ -10,17 +10,21 @@
         android:label="12 Shades of Prince"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+                     android:name="android.app.searchable"/>
+            <!--android:resource="@xml/searchable"-->
+
         <activity
             android:name=".StoreHome"
             android:label="12 Shades of Prince"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.SEARCH" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShoppingCart"></activity>
+        <activity android:name=".ShoppingCart"/>
     </application>
 
 </manifest>
