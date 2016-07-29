@@ -1,12 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.janerubygrissom.project2.ShoppingCart">
+    android:orientation="vertical"
+    android:background="#9C27B0"
+    >
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E1BEE7"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Princes:"
+            android:textSize="30sp"
+          />
 
-</RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20sp"-->
+        <!--android:text="Your Princes:" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/shoppingCartRecyclerView"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="2"
+            android:layout_marginTop="60dp">
+
+    <Button android:id="@+id/btnCheckOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Checkout"
+            android:padding="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_weight="1"
+        />
+
+    <Button android:id="@+id/btnCLear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Clear Princes"
+        android:layout_below="@id/shoppingCartRecyclerView"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#BDBDBD"
+        android:layout_weight="1"
+        android:background="?android:attr/selectableItemBackground"
+        />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--<TextView-->
+        <!--android:id="@+id/showCart"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--/>-->
+
+
+    <!--<Button android:id="@+id/btnGoBack"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Go Back to Product List"-->
+        <!--/>-->
+
+</ScrollView>
+
+</LinearLayout>

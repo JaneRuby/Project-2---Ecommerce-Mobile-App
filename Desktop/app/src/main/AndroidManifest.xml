@@ -1,30 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.janerubygrissom.project2">
+    package="com.example.janerubygrissom.myapplication">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/lover_prince"
-        android:label="12 Shades of Prince"
+        android:label="Many Shades of Prince"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data
-                     android:name="android.app.searchable"/>
-            <!--android:resource="@xml/searchable"-->
-
         <activity
-            android:name=".StoreHome"
-            android:label="12 Shades of Prince"
+            android:name=".MainActivity"
+            android:label="Many Shades of Prince"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.activity_search_view"
+                android:resource="@xml/searchable" />
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.SEARCH" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".SearchViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+        </activity>
+        <!-- <activity android:name=".ShoppingCart" /> -->
+
+        <activity android:name=".Main2Activity"
+            android:label="Many Shades of Prince">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShoppingCart"/>
+
+        <activity
+            android:name=".ShoppingCart"
+            android:label="Your Princes"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>
