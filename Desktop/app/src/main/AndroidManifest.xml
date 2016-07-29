@@ -24,12 +24,6 @@
 
             </intent-filter>
         </activity>
-        <activity android:name=".SearchViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-
-        </activity>
         <!-- <activity android:name=".ShoppingCart" /> -->
 
         <activity android:name=".Main2Activity"

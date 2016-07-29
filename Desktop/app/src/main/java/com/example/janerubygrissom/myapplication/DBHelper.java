@@ -83,7 +83,7 @@ public class DBHelper extends SQLiteOpenHelper {
         values.put(COL_PRINCE_DESC, mainObject.getDescription());
         values.put(COL_PRINCE_ITEMDESC, mainObject.getItemDescription());
         values.put(COL_WEBSITE_IMAGE, mainObject.getmWebsite());
-//        db.insertOrThrow(PRINCE_TABLE, null, values);
+        db.insertOrThrow(PRINCE_TABLE, null, values);
     }
 
     public void insertShoppingCart(InventoryItem mainObject) {
@@ -143,8 +143,8 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = db.query(
                 PRINCE_TABLE,   //table name
                 null,   //String[] projection (null for */all columns)
-                COL_PRINCE_ITEMDESC + " = ? ",
-                new String[]{"%" + String.valueOf(search) + "%"},//String[] selection
+                COL_PRINCE_NAME + " like ? ",
+                new String[]{"%" + search + "%"},//String[] selection
                 null,   //String groupBy
                 null,   //String having
                 null    //String orderBy
