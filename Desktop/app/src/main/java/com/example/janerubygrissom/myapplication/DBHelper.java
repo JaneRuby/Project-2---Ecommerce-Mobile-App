@@ -214,11 +214,24 @@ public class DBHelper extends SQLiteOpenHelper {
         return arrayList;
     }
 
+
+
     public void deleteShoppingCart() {
         SQLiteDatabase db = getWritableDatabase();
 
         db.execSQL("delete from " + SHOPPING_TABLE);
         db.close();
     }
+
+    public void removePrinceFromShoppingCart(String name){
+        String selection = "Prince_Name= ?";
+        String[] selectionArgs = {name};
+        SQLiteDatabase dbHelper = this.getWritableDatabase();
+        dbHelper.delete("Shopping_Table", selection, selectionArgs);
+    }
+
+
+
+
 }
 

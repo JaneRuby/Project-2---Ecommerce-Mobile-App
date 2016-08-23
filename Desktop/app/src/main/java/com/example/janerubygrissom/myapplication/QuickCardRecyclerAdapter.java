@@ -50,7 +50,9 @@ public class QuickCardRecyclerAdapter extends RecyclerView.Adapter<QuickCardView
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Added to Cart", Toast.LENGTH_SHORT).show();
+                // TODO: 8/1/16 add dialog box
+                // TODO: 8/1/16 toast.cancel()
+                Toast.makeText(view.getContext(), "Added to cart", Toast.LENGTH_SHORT).show();
                 DBHelper dbHelper = DBHelper.getInstance(view.getContext());
                 //object goes below, probably arraylist.get(position)
                 Log.i("iiiiiiiiiii", mInventoryList.get(position).getDescription());

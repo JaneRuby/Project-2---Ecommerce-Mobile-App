@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class ShoppingCart extends AppCompatActivity{
+public class ShoppingCart extends AppCompatActivity {
     ////
     RecyclerView mRecyclerView;
     Button btnClear;
@@ -72,15 +72,38 @@ public class ShoppingCart extends AppCompatActivity{
         btnCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                itemList = dbHelper.getShoppingData();
+                shoppingCartAdapter2 = new ShoppingCartAdapter2(itemList);
+                mRecyclerView.setAdapter(shoppingCartAdapter2);
 
                 Toast.makeText(ShoppingCart.this, "You have just brought more Prince into your life! \n CONGRATS!", Toast.LENGTH_SHORT).show();
 
             }
         });
 
-    }
+        // TODO: 8/1/16 search shopping cart database and remove position
+
+//        holder._________.setOnLongClickListener(new View.OnLongClickListener() {
+//            @Override
+//            public boolean onLongClick(View view) {
+//
+//                InventoryItem.getInventoryItem().remove(position);
+//                notifyItemRemoved(position);
+//                notifyItemRangeChanged(position, InventoryItem.getmInventoryItem().size());
+//                notifyDataSetChanged();
+//
+//                //delete stuff
+//                return true;
+//
+//                Toast.makeText(ShoppingCart.this, "You have just removed a Prince", Toast.LENGTH_SHORT).show();
+//
+//
+//            }
+//        });
 
     }
+
+}
 
 
 //    @Override
@@ -93,7 +116,6 @@ public class ShoppingCart extends AppCompatActivity{
 //
 //        }
 //    }
-
 
 
 //    private static ShoppingCart mCart = null;

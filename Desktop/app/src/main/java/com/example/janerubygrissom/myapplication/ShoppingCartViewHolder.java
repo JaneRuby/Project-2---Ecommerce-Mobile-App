@@ -12,11 +12,20 @@ public class ShoppingCartViewHolder extends RecyclerView.ViewHolder {
     private ImageView mItemImage;
     private TextView mCountryName;
 
-    public ShoppingCartViewHolder(View itemView) {
+    public ShoppingCartViewHolder(final View itemView) {
         super(itemView);
 
         mItemImage = (ImageView) itemView.findViewById(R.id.prince_photo);
         mCountryName = (TextView) itemView.findViewById(R.id.prince_name);
+        itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+
+                DBHelper.getInstance(itemView.getContext()).removePrinceFromShoppingCart(mCountryName.getText().toString());
+
+                return true;
+            }
+        });
     }
 
     public void setOnClickListener(View.OnClickListener onClickListener) {

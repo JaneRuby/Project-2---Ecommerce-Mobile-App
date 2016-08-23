@@ -31,7 +31,7 @@ public class ShoppingCartAdapter2 extends RecyclerView.Adapter<ShoppingCartViewH
 
     @Override
     public void onBindViewHolder(ShoppingCartViewHolder holder, int position) {
-        InventoryItem item = mInventoryList.get(position);
+//        InventoryItem item = mInventoryList.get(position);
 
         Picasso.with(holder.getItemImage().getContext()).load(mInventoryList.get(position).getmWebsite()
         ).resize(600, 200)
@@ -41,6 +41,8 @@ public class ShoppingCartAdapter2 extends RecyclerView.Adapter<ShoppingCartViewH
 //        holder.getItemImage().setImageResource(item.getImageResId());
 
         holder.getmCountryName().setText(mInventoryList.get(position).getDescription());
+
+
 
 
 
