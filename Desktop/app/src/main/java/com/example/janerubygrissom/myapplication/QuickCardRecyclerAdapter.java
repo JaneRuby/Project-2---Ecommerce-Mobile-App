@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class QuickCardRecyclerAdapter extends RecyclerView.Adapter<QuickCardViewHolder> {
 
+    //sets up how the items in the recyclerview will be referenced
     ArrayList<InventoryItem> mInventoryList;
 
     public QuickCardRecyclerAdapter(ArrayList<InventoryItem> inventoryList) {

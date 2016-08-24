@@ -7,11 +7,13 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.janerubygrissom.myapplication.Seeeeeeearch">
+    tools:context=".Search"
+    android:background="#9C27B0">
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/search_recycler_view"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:paddingRight="15dp"/>
 
 </LinearLayout>

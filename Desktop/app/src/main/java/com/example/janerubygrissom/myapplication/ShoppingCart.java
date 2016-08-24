@@ -11,7 +11,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class ShoppingCart extends AppCompatActivity {
-    ////
     RecyclerView mRecyclerView;
     Button btnClear;
     Button btnCheckOut;
@@ -21,6 +20,7 @@ public class ShoppingCart extends AppCompatActivity {
 
     ArrayList<InventoryItem> itemList;
 
+    //creates shopping cart
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,55 +106,3 @@ public class ShoppingCart extends AppCompatActivity {
 }
 
 
-//    @Override
-//    public void onClick(View view) {
-//        switch (view.getId()) {
-//            default:
-//            case R.id.btnCheckout:
-//                Toast.makeText(this, "YOU HAVE PURCHASED ALL ITEMS IN YOUR BASKET", Toast.LENGTH_SHORT).show();
-//                break;
-//
-//        }
-//    }
-
-
-//    private static ShoppingCart mCart = null;
-//    private static ArrayList<InventoryItem> mShoppingCart = new ArrayList<>();
-//
-//    private ShoppingCart() {
-//        mShoppingCart = new ArrayList<InventoryItem>();
-//    }
-//
-//    public static ShoppingCart getInstance() {
-//        if (mCart == null) {
-//            mCart = new ShoppingCart();
-//        }
-//        return mCart;
-//    }
-//
-//    public ArrayList<InventoryItem> getShoppingCart() {
-//        return mShoppingCart;
-//    }
-//
-//    public void addItemToCart(InventoryItem item, View view) {
-//        if (DBHelper.getInstance(view.getContext()).getItemCount(item) > 0) {
-//            mShoppingCart.add(item);
-//
-//        }
-//
-//    public void removeItemFromCart(InventoryItem item) {
-//        mShoppingCart.remove(item);
-//    }
-//
-//    public void emptyCart() {
-//        for (int i = mShoppingCart.size() - 1; i >= 0; i--) {
-//            mShoppingCart.remove(i);
-//        }
-//    }
-//
-//    @Override
-//    public void onClick(View view) {
-//
-//    }
-//}
-//

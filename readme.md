@@ -141,16 +141,16 @@ This will serve as a helpful overall gauge of whether you met the project goals,
 
 UPDATED READ ME with USER TEST INFO:
 
-This shopping cart tutorial will involve several different layouts:
+This shopping cart tutorial will involve 3 different layouts:
+Splash Screen
 Catalog
-Product Details
 Shopping Cart
 
-When the app starts, you will be immediately presented with the Catalog layout. From the catalog layout you can click on a product to view more details about it, and from there, you can add the product to your cart.
+When the app starts, you will be immediately presented with the Splash screen layout. From the splash screen layout you can click on the button  to view the catalog of "Prince", and from there, you can add the product to your cart.
 
-After adding the product to your cart, you will be taken back to the Catalog, where you can view details for other products or proceed to view your shopping cart.
+After adding the product to your cart, you can go to the shopping cart layout.
 
-The Shopping Cart layout will include the option to remove items from your cart, and to "Proceed to Checkout."
+The Shopping Cart layout will include the option to remove the items from your cart, and to "Proceed to Checkout."
 
 
  Feature: The user can search through the products.
@@ -159,34 +159,23 @@ The Shopping Cart layout will include the option to remove items from your cart,
  The user can touch the search icon enter their search term(s) into the searchbar that appears.
  The user can see a list of the search results specific to their search terms.
  The user can erase the previous search and start a fresh one.
- The user can touch the search results to see a detailed view.
  
  User Story:
  I want to search through the items using the search bar.
- I want to search for items by their name, price, or description.
- I want to touch one of the search results to find out more information abour it.
+ I want to search for items by their name.
+ I want to touch one of the search results to add to cart.
  
 
  Feature: The user can browse through all the products.
  
  Conditionals: 
  The user can scroll through a list of products.
- The user can view a name and price for each product from the list.
+ The user can view a name for each product from the list.
  User Story:
  I want to browse all the products on this app.
- 
- 
 
- Feature: The user can view details about a product.
- 
- Conditionals:
- The user can touch an item from the main list and it will open a new view with details on that product, including description.
- User Story:
- I want to touch an item from the list to see more info about it.
- 
- 
 
- Feature: The user can access cart from any screen.
+ Feature: The user can access cart from category layout screen.
  
  Conditionals: 
  The user can view a shopping cart button on every screen.
@@ -201,18 +190,8 @@ The Shopping Cart layout will include the option to remove items from your cart,
  
  Conditionals:
  The user can touch the list item to add it to the shopping cart.
- The user can touch the detail activity to add that item to the shopping cart.
  The user can touch next to an item in the shopping cart activity to remove that item from the shopping cart.
  User Story:
  I want to add items to my cart.
  I want to remove items from my cart.
  
- 
-
- Feature: The user can change quantity of an item in the cart.
- 
- Conditionals:
- The user can touch next to an item in the shopping cart activity to increment or decrement the quantity.
- The user can see the price change in their subtotal to reflect the change in quantity.
- User Story:
- I want to change the quantity of an item in my cart.

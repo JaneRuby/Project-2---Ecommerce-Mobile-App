@@ -10,18 +10,19 @@ import android.widget.TextView;
  */
 public class ShoppingCartViewHolder extends RecyclerView.ViewHolder {
     private ImageView mItemImage;
-    private TextView mCountryName;
+    private TextView mPrinceName;
+
 
     public ShoppingCartViewHolder(final View itemView) {
         super(itemView);
 
         mItemImage = (ImageView) itemView.findViewById(R.id.prince_photo);
-        mCountryName = (TextView) itemView.findViewById(R.id.prince_name);
+        mPrinceName = (TextView) itemView.findViewById(R.id.prince_name);
         itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
 
-                DBHelper.getInstance(itemView.getContext()).removePrinceFromShoppingCart(mCountryName.getText().toString());
+                DBHelper.getInstance(itemView.getContext()).removePrinceFromShoppingCart(mPrinceName.getText().toString());
 
                 return true;
             }
@@ -36,8 +37,8 @@ public class ShoppingCartViewHolder extends RecyclerView.ViewHolder {
         return mItemImage;
     }
 
-    public TextView getmCountryName() {
-        return mCountryName;
+    public TextView getmPrinceName() {
+        return mPrinceName;
     }
 }
 

@@ -20,7 +20,7 @@ public class ShoppingCartAdapter2 extends RecyclerView.Adapter<ShoppingCartViewH
         this.mInventoryList = mInventoryList;
     }
 
-
+//adapter set to take info from the inventory list
     @Override
     public ShoppingCartViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
@@ -40,13 +40,15 @@ public class ShoppingCartAdapter2 extends RecyclerView.Adapter<ShoppingCartViewH
 
 //        holder.getItemImage().setImageResource(item.getImageResId());
 
-        holder.getmCountryName().setText(mInventoryList.get(position).getDescription());
+        holder.getmPrinceName().setText(mInventoryList.get(position).getDescription());
 
 
 
 
 
     }
+
+    //returns the size of the the list
 
     @Override
     public int getItemCount() {

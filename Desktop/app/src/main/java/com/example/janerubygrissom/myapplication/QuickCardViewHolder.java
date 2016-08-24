@@ -11,14 +11,16 @@ import android.widget.TextView;
 
 public class QuickCardViewHolder extends RecyclerView.ViewHolder {
 
+    //sets up the view of the card
+
     private ImageView mItemImage;
-    private TextView mCountryName;
+    private TextView mPrinceName;
 
     public QuickCardViewHolder(View itemView) {
         super(itemView);
 
         mItemImage = (ImageView) itemView.findViewById(R.id.prince_photo);
-        mCountryName = (TextView) itemView.findViewById(R.id.prince_name);
+        mPrinceName = (TextView) itemView.findViewById(R.id.prince_name);
     }
 
     public void setOnClickListener(View.OnClickListener onClickListener) {
@@ -30,6 +32,6 @@ public class QuickCardViewHolder extends RecyclerView.ViewHolder {
     }
 
     public TextView getmCountryName() {
-        return mCountryName;
+        return mPrinceName;
     }
 }

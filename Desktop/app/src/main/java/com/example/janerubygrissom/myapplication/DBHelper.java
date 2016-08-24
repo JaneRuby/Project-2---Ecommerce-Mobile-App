@@ -41,6 +41,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return sInstance;
     }
 
+    //creates SQLite Database
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String createString = "CREATE TABLE " + PRINCE_TABLE + "(" +
@@ -86,6 +87,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.insertOrThrow(PRINCE_TABLE, null, values);
     }
 
+    //adds to shopping cart
     public void insertShoppingCart(InventoryItem mainObject) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -133,6 +135,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     }
+
 
     //TODO method for retrieving item description details
     public ArrayList<InventoryItem> getPrinceBySearch3(String search) {
@@ -188,7 +191,7 @@ public class DBHelper extends SQLiteOpenHelper {
         cursor.close();
         return arrayList;
     }
-
+//gets shopping cart data using cursor
     public ArrayList<InventoryItem> getShoppingData() {
         ArrayList<InventoryItem> arrayList = new ArrayList<>();
         SQLiteDatabase db = getReadableDatabase();
@@ -214,7 +217,7 @@ public class DBHelper extends SQLiteOpenHelper {
         return arrayList;
     }
 
-
+//delete all from shopping cart
 
     public void deleteShoppingCart() {
         SQLiteDatabase db = getWritableDatabase();
@@ -223,6 +226,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    //remove the princes from shopping cart
     public void removePrinceFromShoppingCart(String name){
         String selection = "Prince_Name= ?";
         String[] selectionArgs = {name};

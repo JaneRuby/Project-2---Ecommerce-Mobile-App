@@ -154,7 +154,7 @@ public class MainActivity extends Main2Activity {
             dbHelper.insertMainInventory(new InventoryItem("Fancy Prince", "Fancy Prince", "Kiss",
                     "http://images2.fanpop.com/image/photos/11900000/prince-prince-11935710-500-500.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("Introspective Prince", "Introspective Prince", "Purple Rain",
+            dbHelper.insertMainInventory(new InventoryItem("Reflective Prince", "Reflective Prince", "Purple Rain",
                     "http://diabolicalrabbit.com/wp-content/uploads/2016/04/Prince.jpeg"));
 
             dbHelper.insertMainInventory(new InventoryItem("Sassy Prince", "Sassy Prince", "Little Red Corvette",
@@ -190,37 +190,37 @@ public class MainActivity extends Main2Activity {
             dbHelper.insertMainInventory(new InventoryItem("Thoughtful Prince", "Thoughtful Prince", "The Beautiful Ones",
                     "http://www.newyorker.com/wp-content/uploads/2016/04/Prince-Death-Slideshow01-1200x630-1461261685.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________1 Prince", "___________1 Prince", "_____________1",
+            dbHelper.insertMainInventory(new InventoryItem("Puzzled Prince", "Puzzled Prince", "_____________1",
                     "http://cdn4.pitchfork.com/news/64980/120b0415.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________2 Prince", "___________2 Prince", "_____________2",
+            dbHelper.insertMainInventory(new InventoryItem("Naughty Prince", "Naughty Prince", "_____________2",
                     "https://troubleddiva.files.wordpress.com/2016/03/15-prince-lovesexy.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________3 Prince", "___________3 Prince", "_____________3",
+            dbHelper.insertMainInventory(new InventoryItem("BFF Prince", "BFF Prince", "_____________3",
                     "http://images6.fanpop.com/image/photos/37100000/It-s-Prince-prince-37137421-498-404.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________4 Prince", "___________4 Prince", "_____________4",
+            dbHelper.insertMainInventory(new InventoryItem("Glam Prince", "Glam Prince", "_____________4",
                     "https://cdn2.vox-cdn.com/thumbor/Wbls9zGoJVkwmVCwcDYMs4xWWrI=/0x0:2012x1341/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/46658760/GettyImages-463035206.0.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________5 Prince", "___________5 Prince", "_____________5",
+            dbHelper.insertMainInventory(new InventoryItem("Punk Prince", "Punk Prince", "_____________5",
                     "http://www.billboard.com/files/styles/article_main_image/public/media/prince-under-the-cherry-moon-1986-billboard-650.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________6 Prince", "___________6 Prince", "_____________6",
+            dbHelper.insertMainInventory(new InventoryItem("Soft Prince", "Soft Prince", "_____________6",
                     "https://static01.nyt.com/images/2016/04/21/t-magazine/PRINCESTYLE-SS-slide-9QJM/PRINCESTYLE-SS-slide-9QJM-superJumbo-v4.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________7 Prince", "___________7 Prince", "_____________7",
+            dbHelper.insertMainInventory(new InventoryItem("Powerful Prince", "Powerful Prince", "_____________7",
                     "http://img2.timeinc.net/people/i/2016/news/160502/prince-obit-4-660.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________8 Prince", "___________8 Prince", "_____________8",
+            dbHelper.insertMainInventory(new InventoryItem("Proud Prince", "Proud Prince", "_____________8",
                     "http://ll-media.tmz.com/2016/04/15/041516-prince-getty-6.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________9 Prince", "___________9 Prince", "_____________9",
+            dbHelper.insertMainInventory(new InventoryItem("Timeless Prince", "Timeless Prince", "_____________9",
                     "http://pixel.nymag.com/imgs/daily/vulture/2016/04/21/prince/21-prince-1.w529.h529.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________10 Prince", "___________10 Prince", "_____________10",
+            dbHelper.insertMainInventory(new InventoryItem("Haughty Prince", "Haughty Prince", "_____________10",
                     "http://cdn-media.extratv.com/2016/04/21/prince-825x580-2.jpg"));
 
-            dbHelper.insertMainInventory(new InventoryItem("________11 Prince", "___________11 Prince", "_____________11",
+            dbHelper.insertMainInventory(new InventoryItem("Haunting Prince", "Hauntiny Prince", "_____________11",
                     "http://img2-2.timeinc.net/people/i/2016/news/160502/prince-cc-600.jpg"));
 
         }
@@ -287,7 +287,7 @@ public class MainActivity extends Main2Activity {
 //                return false;
 //            }
 //        });
-        ComponentName componentName = new ComponentName(this, Seeeeeeearch.class);
+        ComponentName componentName = new ComponentName(this, Search.class);
         searchView.setSearchableInfo(searchManager.getSearchableInfo(componentName));
 //
         return true;

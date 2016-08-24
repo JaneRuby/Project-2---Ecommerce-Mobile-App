@@ -9,6 +9,7 @@ import android.widget.Button;
 public class Main2Activity extends AppCompatActivity {
     Button enterBtn;
 
+    //"splash screen, intro, enter the app"
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +18,7 @@ public class Main2Activity extends AppCompatActivity {
         final Button enterBtn = (Button) findViewById(R.id.enterBtn);
 
 
+  //when the button is clicked, enters next screen
     enterBtn.setOnClickListener(new View.OnClickListener() {
         public void onClick(View v) {
 
