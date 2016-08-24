@@ -112,15 +112,6 @@ If you have questions about whether or not your work adheres to these guidelines
 
 ---
 
-#### Example Deliverable
-
-Below you can find an example of what the instructors' final product looks like. **Be creative with your own designs!**
-
-<p align="center">
-  <img src="screenshots/example-1.png" height="300px" /> <img src="screenshots/example-2.png" height="300px" />
-</p>
-
-
 #### Project Feedback + Evaluation
 
 
